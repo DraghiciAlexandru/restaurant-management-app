@@ -1,0 +1,8 @@
+D:\C#\UI design\Dinamic\Restaurant\Restaurant\bin\Debug\Restaurant.exe.config
+D:\C#\UI design\Dinamic\Restaurant\Restaurant\bin\Debug\Restaurant.exe
+D:\C#\UI design\Dinamic\Restaurant\Restaurant\bin\Debug\Restaurant.pdb
+D:\C#\UI design\Dinamic\Restaurant\Restaurant\obj\Debug\Restaurant.csprojAssemblyReference.cache
+D:\C#\UI design\Dinamic\Restaurant\Restaurant\obj\Debug\Restaurant.Properties.Resources.resources
+D:\C#\UI design\Dinamic\Restaurant\Restaurant\obj\Debug\Restaurant.csproj.GenerateResource.cache
+D:\C#\UI design\Dinamic\Restaurant\Restaurant\obj\Debug\Restaurant.exe
+D:\C#\UI design\Dinamic\Restaurant\Restaurant\obj\Debug\Restaurant.pdb

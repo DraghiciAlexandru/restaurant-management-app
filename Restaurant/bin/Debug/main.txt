@@ -1,0 +1,4 @@
+1,hamburger,hamburger,25
+2,pasta,pasta,24
+3,salad,salad,7.5
+4,spaghetti,spaghetti,24.5

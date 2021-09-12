@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1BCEF5F9-7DC1-4F2C-9D12-C7DE1616D811}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Restaurant</RootNamespace>
+    <AssemblyName>Restaurant</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controler\ControlBookings.cs" />
+    <Compile Include="Controler\ControlCancel.cs" />
+    <Compile Include="Controler\ControlCustomers.cs" />
+    <Compile Include="Controler\ControlMenu.cs" />
+    <Compile Include="Controler\ControlOrderDetails.cs" />
+    <Compile Include="Controler\ControlOrders.cs" />
+    <Compile Include="Controler\ControlTabels.cs" />
+    <Compile Include="Model\AbstractDish.cs" />
+    <Compile Include="Model\Booking.cs" />
+    <Compile Include="Model\Client.cs" />
+    <Compile Include="Model\DesertDish.cs" />
+    <Compile Include="Model\MainDish.cs" />
+    <Compile Include="Model\Menu.cs" />
+    <Compile Include="Model\Order.cs" />
+    <Compile Include="Model\OrderDetails.cs" />
+    <Compile Include="Model\Person.cs" />
+    <Compile Include="Model\SoupDish.cs" />
+    <Compile Include="Model\Staff.cs" />
+    <Compile Include="Model\Tabel.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Servicii\ChainHashtable.cs" />
+    <Compile Include="Servicii\ILista.cs" />
+    <Compile Include="Servicii\Lista.cs" />
+    <Compile Include="Servicii\ListaSimpla.cs" />
+    <Compile Include="Servicii\Node.cs" />
+    <Compile Include="Servicii\SimpleHashTable.cs" />
+    <Compile Include="Servicii\Stored.cs" />
+    <Compile Include="Servicii\ThemeColor.cs" />
+    <Compile Include="Template\CardArchiveStaff.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Template\CardDetails.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Template\CardDishClient.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Template\CardDishStaff.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Template\CardProfil.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Template\CardTabelStaff.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Template\ViewArchiveClient.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Template\ViewArchiveStaff.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Template\ViewLogin.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Template\ViewMenuClient.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Template\ViewMenuStaff.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Template\ViewOrderClient.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Template\ViewOrderStaff.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Template\ViewRegister.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Template\ViewTabelClient.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Template\ViewTabelsStaff.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="View\FrmView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
